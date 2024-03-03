@@ -21,10 +21,9 @@ Year : {self.year}"""
     
 car = Car("Ferrari","turbo",2024,200000)
 
-# print(car.get_info())
 my_dict = dict()
 lst = list()
-for i in range(3):
+for i in range(10):
     name = input("name : ")
     typee = input("type : ")
     year = int(input("year : "))
@@ -32,5 +31,6 @@ for i in range(3):
     my_dict[i] = car.setInfo(name,typee,year,price)
     lst.append(my_dict[i])
 lst.sort(key=lambda x : x[2])
+
 print(lst)
 
